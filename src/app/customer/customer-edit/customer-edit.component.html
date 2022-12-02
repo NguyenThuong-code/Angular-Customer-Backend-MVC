@@ -1,0 +1,18 @@
+<h1>Update Customer</h1>
+<form [formGroup]="customerForm" (ngSubmit)="updateCustomer(id)">
+  <table>
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" formControlName="first"></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" formControlName="lastName"></td>
+    </tr>
+  
+    <tr>
+      <td></td>
+      <td><button>Update</button></td>
+    </tr>
+  </table>
+</form>

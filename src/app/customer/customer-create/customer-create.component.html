@@ -1,0 +1,20 @@
+<h1>Create Customer</h1>
+<form [formGroup]="customerForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>First Name</td>
+      <td><input type="text" formControlName="firstName"></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" formControlName="lastName"></td>
+    </tr>
+   
+    <tr>
+      <td></td>
+      <td>
+        <button>Create</button>
+      </td>
+    </tr>
+  </table>
+</form>

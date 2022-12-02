@@ -1,0 +1,18 @@
+<h1>Delete Customer</h1>
+<form [formGroup]="customerForm" (ngSubmit)="deleteCustomer(id)">
+  <table>
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" formControlName="firstName"></td>
+    </tr>
+    <tr>
+      <td>Last Name: </td>
+      <td><input type="text" formControlName="lastName"></td>
+    </tr>
+    
+    <tr>
+      <td></td>
+      <td><button>Delete</button></td>
+    </tr>
+  </table>
+</form>
